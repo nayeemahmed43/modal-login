@@ -4,8 +4,6 @@
   "private": true,
   "dependencies": {
     "@babel/parser": "^7.10.4",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "firebase": "^7.16.0",
     "node-sass": "^4.14.1",
@@ -36,5 +34,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "react-test-renderer": "^16.13.1"
   }
 }
