@@ -29,6 +29,7 @@ const SignUp = ({ history }) => {
       history.push("/");
     } catch (error) {
       alert(error);
+      history.push("/login");
     }
   }, [history]);
 
@@ -37,19 +38,22 @@ const SignUp = ({ history }) => {
     <div className="container">
         <button onClick={() => setModalIsOpen(true)}>Sign up</button>
             <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} style={customStyles}>
+                
+                <div id="icon">
+                  <i class="fas fa-times-circle" onClick={() => setModalIsOpen(false)}></i>
+                </div>
                 <h3>Create an Account</h3>
                 <form onSubmit={handleSignUp}>
                 <label>
-                    Email
-                    <input name="email" type="email" placeholder="Email" />
-                </label><br></br>
+                    Username&nbsp;
+                    <input name="email" type="email" placeholder="Username" id="email"/>
+                </label><br/><br/>
                 <label>
-                    Password
-                    <input name="password" type="password" placeholder="Password" />
-                </label>
+                    Password&nbsp;
+                    <input name="password" type="password" placeholder="Password" id="password"/>
+                </label><br/><br/>
                 <button type="submit">Sign Up</button>
               </form>
-                <button onClick={() => setModalIsOpen(false)}>close</button>
             </Modal>
     </div>
   );

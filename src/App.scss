@@ -1,0 +1,18 @@
+@import './styles/login';
+@import './styles/signup';
+@import './styles/signout';
+
+$main-color:black;
+
+
+.App {
+    color: #fff;
+    background-color: $main-color;
+    opacity: 0.5;
+    min-height: 100vh;
+
+    h1 {
+        margin-left: 44%;
+        padding-top: 5%;
+    }
+}
